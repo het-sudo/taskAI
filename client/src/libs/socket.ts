@@ -16,7 +16,7 @@ export function connectSocket(token: string) {
 
   // initialize new socket connection
   socket = io(
-    import.meta.env.VITE_SOCKET_URL || "https://taskai-ec2.duckdns.org/",
+    import.meta.env.VITE_SOCKET_URL || "https://taskai-ec2.duckdns.org",
     {
       autoConnect: true,
       auth: { token },

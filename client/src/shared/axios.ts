@@ -16,7 +16,8 @@ type RetryConfig = InternalAxiosRequestConfig & {
 let refreshPromise: Promise<string> | null = null;
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://13.217.5.80/api/v1",
+  baseURL:
+    import.meta.env.VITE_API_URL || "https://taskai-ec2.duckdns.org/api/v1",
   withCredentials: true,
 });
 
